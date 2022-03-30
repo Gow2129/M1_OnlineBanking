@@ -33,7 +33,7 @@ endif
 # Makefile will not run target command if the name with file already exists. To override, use .PHONY
 .PHONY : all run test coverage cppcheck valgrind clean
 all:$(BUILD_DIR)
-	gcc mainprogram.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) $(IN)
+	gcc mainProject.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) $(IN)
 run: all
 	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 test: $(SRC) $(TEST_SRC)
@@ -52,4 +52,4 @@ valgrind:
 
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
-	rmdir $(BUILD_DIR)
+	rmdir $(BUILD_DIR) 
