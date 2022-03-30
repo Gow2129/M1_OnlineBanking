@@ -59,35 +59,35 @@ endif
 #clean:
 #	$(RM) $(call FixPath,$(BUILD_DIR)/*)
 #	rmdir $(BUILD_DIR) 
-all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+#all: $(SRC) $(BUILD)
+#	gcc $(SRC) $(INC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+#
 
-
-run: all
-	./$(call FixPath,$(PROJ_NAME).$(EXEC))
+#run: all
+#	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
 # Build and run of Unit test
 
-build_test:
-	gcc $(TEST_SRC) $(INC) $(INCLUDE_LIBS) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+#build_test:
+#	gcc $(TEST_SRC) $(INC) $(INCLUDE_LIBS) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
 
-run_test: build_test
-	./$(call FixPath,$(PROJ_NAME).$(EXEC))
+#run_test: build_test
+#	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
-analyze: test memcheck staticcheck coverage sanitize_check
+#analyze: test memcheck staticcheck coverage sanitize_check
 
-staticcheck:
-	cppcheck --enable=all -iunity .
+#staticcheck:
+#	cppcheck --enable=all -iunity .
 
-memcheck:
-	valgrind ./$(TEST_OUTPUT)
+#memcheck:
+#	valgrind ./$(TEST_OUTPUT)
 
-sanitize_check:
-	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
-	./$(TEST_OUTPUT)
+#sanitize_check:
+#	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
+#	./$(TEST_OUTPUT)
 
-clean:
-	$(RM) $(call FixPath,$(PROJ_NAME).$(EXEC))
+#clean:
+#	$(RM) $(call FixPath,$(PROJ_NAME).$(EXEC))
 
 # Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
