@@ -20,7 +20,7 @@ void tearDown(){}
 
 void test_unity(void){
         
-  	TEST_ASSERT_EQUAL(0,main());
+  	TEST_ASSERT_EQUAL("0",main());
       
 }
 
