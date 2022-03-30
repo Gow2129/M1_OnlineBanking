@@ -20,7 +20,7 @@ void tearDown(){}
 
 void test_unity(void){
         
-        sum=1000;
+        int sum=1000;
   	TEST_ASSERT_EQUAL(1,fun6(sum));
       
 }
