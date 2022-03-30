@@ -17,4 +17,4 @@ jobs:
     - name: make test
       run: make -C 3_Implementation/ test/test_OB.c
     - name: Valgrid
-      run: valgrind ./3_Implementation/Build/
+      run: valgrind ./3_Implementation/build/test_OnlineBanking.out
