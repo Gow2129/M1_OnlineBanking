@@ -8,8 +8,8 @@ void fun2();
 void fun3();
 void fun4();
 void fun5();
-int reg();
-int login();
+void reg();
+void login();
 
 
 
@@ -19,7 +19,7 @@ int main()
 	int opt;
 	int amount,choice;
 	char cont = 'y';
-    printf("\nWelcome to Net Banking");
+        printf("\nWelcome to Net Banking");
 	printf("\n\nPress 1 to Register your account");
 	printf("\nPress 2 Login in to your account");
 
