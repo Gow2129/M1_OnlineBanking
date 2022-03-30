@@ -7,7 +7,7 @@
 //int functions(int Methodchoice);
 //int existingrecord();
 void reg();
-void login();
+int login();
 
 
 void fun1();
