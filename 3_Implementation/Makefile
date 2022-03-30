@@ -1,5 +1,5 @@
 # Name of the project
-PROJ_NAME = Test_OnlineBanking
+PROJ_NAME = OnlineBanking
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD_DIR = Build
