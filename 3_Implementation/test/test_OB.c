@@ -20,7 +20,7 @@ void tearDown(){}
 
 void test_Topicindex(void){
         
-  	TEST_ASSERT_EQUAL(0,reg());
+  	TEST_ASSERT_EQUAL("Your current balance is Rs.0.00",fun1());
       
 }
 
