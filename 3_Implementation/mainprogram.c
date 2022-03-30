@@ -8,6 +8,7 @@ void fun2();
 void fun3();
 void fun4();
 void fun5();
+int fun6();
 void reg();
 void login();
 
