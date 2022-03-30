@@ -6,11 +6,11 @@
 
 //int functions(int Methodchoice);
 //int existingrecord();
-int reg();
-int login();
+void reg();
+void login();
 
 
-int fun1();
+void fun1();
 void fun2();
 void fun3();
 void fun4();
