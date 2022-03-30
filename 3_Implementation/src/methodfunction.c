@@ -85,8 +85,9 @@ return 0;
 
 
 
-void fun1(){
+int fun1(){
 	printf("Your current balance is Rs. %.2f",user.balance);
+	return 0;
 }
 void fun2(){
 	int amt;
