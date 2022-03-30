@@ -7,7 +7,7 @@
    FILE *fp,*fptr;
    struct userDetails user,usr;
    
-void login(){
+int login(){
 	int choice;
 	char cont ='y';
 		system("cls");
@@ -59,8 +59,9 @@ void login(){
 			else {
 				printf("Invalid password");
 			}	
-}
-
+   }
+	
+return 0;
 }
 void reg(){
 	printf("\nEnter your Full Name:\t");
