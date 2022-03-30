@@ -163,3 +163,14 @@ void fun5(){
 						}else printf("\nSorry your password is wrong");
 
 }
+int fun6()
+{
+    int amount=1000;
+	if(amount==1000){
+		return 1;
+	}
+	else{
+		return 0;
+	}
+
+}
