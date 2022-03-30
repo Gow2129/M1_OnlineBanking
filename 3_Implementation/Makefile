@@ -11,6 +11,8 @@ SRC =src/methodfunction.c
 TEST_SRC = test/test_OB.c\
 unity/unity.c
 
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).$(EXEC)
+
 # All include folders with header files
 INC = -Iinc\
 -Iunity\
@@ -59,8 +61,7 @@ sanitize_check:
 	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
 	./$(TEST_OUTPUT)
 
-clean:
-	$(RM) $(call FixPath,$(PROJ_NAME).$(EXEC))
+
 	
 coverage:${PROJECT_NAME}
 	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) $(IN)
