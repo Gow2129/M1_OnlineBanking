@@ -8,7 +8,7 @@ void fun2();
 void fun3();
 void fun4();
 void fun5();
-void reg();
+int reg();
 int login();
 
 
