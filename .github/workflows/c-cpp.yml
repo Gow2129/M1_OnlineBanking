@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: Bulid CI - Linux
 
 on:
   push:
@@ -13,5 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: make
-      run: make -C 3_Implementation/ all    
+    - name: Bulid
+      run: make - 3_Implementation    
