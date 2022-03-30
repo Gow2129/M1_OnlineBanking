@@ -63,7 +63,7 @@ int login(){
 	
 return 0;
 }
-void reg(){
+int reg(){
 	printf("\nEnter your Full Name:\t");
 		scanf("%s",user.name);
 		printf("\nEnter your account number:\t");
@@ -80,7 +80,7 @@ void reg(){
 			printf("Succesfully registered");
 		}
 		
-
+return 0;
 }
 
 
