@@ -23,8 +23,8 @@ ifdef OS
    IN=
 else
    ifeq ($(shell uname), Linux)
-      RM = rm -rf
-      FixPath = $1
+	  RM = rm -rf
+	  FixPath = $1
 	  EXEC = out
 	  IN=-lm
    endif
