@@ -6,7 +6,7 @@
 
 //int functions(int Methodchoice);
 //int existingrecord();
-void reg();
+int reg();
 int login();
 
 
