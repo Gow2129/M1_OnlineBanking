@@ -39,6 +39,28 @@ run: all
 test: $(SRC) $(TEST_SRC)
 	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) $(IN)
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) 
+# Build and run of Unit test
+
+build_test:
+	gcc $(TEST_SRC) $(INC) $(INCLUDE_LIBS) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+
+run_test: build_test
+	./$(call FixPath,$(PROJ_NAME).$(EXEC))
+
+analyze: test memcheck staticcheck coverage sanitize_check
+
+staticcheck:
+	cppcheck --enable=all -iunity .
+
+memcheck:
+	valgrind ./$(TEST_OUTPUT)
+
+sanitize_check:
+	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
+	./$(TEST_OUTPUT)
+
+clean:
+	$(RM) $(call FixPath,$(PROJ_NAME).$(EXEC))
 	
 coverage:${PROJECT_NAME}
 	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) $(IN)
