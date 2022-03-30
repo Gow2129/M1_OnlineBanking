@@ -7,7 +7,7 @@
    FILE *fp,*fptr;
    struct userDetails user,usr;
    
-int login(){
+void login(){
 	int choice;
 	char cont ='y';
 		system("cls");
@@ -50,6 +50,7 @@ int login(){
 						fun5();
 					    break;
 					default:
+						printf("0");
 					
 				}//switch ends here
 				printf("\n\nDo you want to continue?[y/n]:\t");
@@ -61,9 +62,9 @@ int login(){
 			}	
    }
 	
-return 0;
+
 }
-int reg(){
+void reg(){
 	printf("\nEnter your Full Name:\t");
 		scanf("%s",user.name);
 		printf("\nEnter your account number:\t");
@@ -80,14 +81,14 @@ int reg(){
 			printf("Succesfully registered");
 		}
 		
-return 0;
+
 }
 
 
 
-int fun1(){
+void fun1(){
 	printf("Your current balance is Rs. %.2f",user.balance);
-	return 0;
+	//return 0;
 }
 void fun2(){
 	int amt;
