@@ -21,8 +21,8 @@
 
 
 ## SWOT ANALYSIS
-**Strength**
--- User can have all the banking Activities.
+##Strength
+* User can have all the banking Activities.
   * Depositing Amount
   * Withdrawing Amount
   * Change password
