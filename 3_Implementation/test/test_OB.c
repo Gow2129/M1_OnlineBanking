@@ -22,6 +22,8 @@ void test_unity(void){
         
         int sum=1000;
   	TEST_ASSERT_EQUAL(1,fun6(sum));
+        TEST_ASSERT_EQUAL(NULL,main());
+        
       
 }
 
