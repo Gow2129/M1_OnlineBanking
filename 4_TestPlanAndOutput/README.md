@@ -1,1 +1,7 @@
 
+
+# Test Plan
+
+|  Test ID | Description  | Expected Input  | Expected Output  | Actual Output  | Pass/Fail |
+|---|---|---|---|---|---|
+| TID_01  | Method function  | Method values | SUCCESS  | SUCCESS | PASS  |
