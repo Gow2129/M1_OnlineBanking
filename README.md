@@ -5,5 +5,5 @@
 [![Bulid CI - windows](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/windows.yml/badge.svg)](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/windows.yml)
 [![Analysis](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/Analysis.yml/badge.svg)](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/Analysis.yml)
 codiga - ![Codiga-Code Grade](https://api.codiga.io/project/32237/status/svg)
-[![Unit Testing](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/unit_test.yml/badge.svg)](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/unit_test.yml)
+[![Unit Testing - Unity](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/unit-test.yml/badge.svg)](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/unit-test.yml)
 [![CodeQuality-Valgrind](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/Valgrind.yml/badge.svg)](https://github.com/Gow2129/M1_OnlineBanking/actions/workflows/Valgrind.yml)
