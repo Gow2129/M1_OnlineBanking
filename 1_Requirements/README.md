@@ -18,6 +18,26 @@
 ## How
 *   By choosing the correct choice number for the operation to be performed.The user will be getting the result ouptut on the display.
 
+
+
+## SWOT ANALYSIS
+**Strength**
+-- User can have all the banking Activities.
+  * Depositing Amount
+  * Withdrawing Amount
+  * Change password
+  * net transaction 
+
+**Weakness**
+-- If the password is wrong No activities can be done.
+
+**Opportunity**
+-- user can Deposit, withdraw amount and can do net transcations.
+
+**Threats**
+-- If the password is wrong No activities can be done.
+
+
 ## Detail Requirements
 ### High Level Requirements 
 | ID | Description | Status | 
