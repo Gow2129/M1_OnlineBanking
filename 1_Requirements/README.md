@@ -28,14 +28,14 @@
   * Change password
   * net transaction 
 
-**Weakness**
--- If the password is wrong No activities can be done.
+## Weakness
+ * If the password is wrong No activities can be done.
 
-**Opportunity**
--- user can Deposit, withdraw amount and can do net transcations.
+## Opportunity
+* user can Deposit, withdraw amount and can do net transcations.
 
-**Threats**
--- If the password is wrong No activities can be done.
+## Threats
+* If the password is wrong No activities can be done.
 
 
 ## Detail Requirements
