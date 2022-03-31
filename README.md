@@ -11,7 +11,7 @@ This is a OnlineBanking application project. This project contains all the funti
 | `4_Test_plan`      | Documents with test plans and procedures|
 
 
-# codiga Badges and Score
+## codiga Badges and Score
 ![Codiga-Code Grade](https://api.codiga.io/project/32237/status/svg)
 ![Codiga-Code Score](https://api.codiga.io/project/32237/score/svg)
 
