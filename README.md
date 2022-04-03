@@ -1,5 +1,5 @@
 # OnlineBanking
-This is a OnlineBanking application project. This project contains all the funtions of Onlinebanking like current balance, Add amount, withdraw cash, net transaction, change password.At first the user have to register by provide the details like full name, account number, phone number and password. After that the user can login into there account and they can do there operations like add amount, withdraw cash, net transraction.
+This is a OnlineBanking application project. This project contains all the functions of Online banking like current balance, Add amount, withdraw cash, net transaction, change password.At first the user have to register by provide the details like full name, account number, phone number and password. After that the user can login into there account and they can do there operations like add amount, withdraw cash, net transaction.
 
 
 ## Folder Structure
